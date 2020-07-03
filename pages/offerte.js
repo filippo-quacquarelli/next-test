@@ -3,7 +3,7 @@ function Offerte( { posts } ) {
     return (
         <ul>
             { posts.slice(0, 10).map( (post, index) => (
-                <li>
+                <li key={post.id}>
                     <img src={post.url} />
                     <br />
                     {post.title}
